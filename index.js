@@ -40,6 +40,11 @@ function clean() {
     document.getElementById("outputBox_rechner").value = "";
 }
 
+function calculateCalculator() {
+    var inputValue = document.getElementById("outputBox_rechner").value;
+    document.getElementById("outputBox_rechner").value = faculty(inputValue);
+}
+
 function addZeroToTextbox() { addNumberToTextbox("0"); }
 function addOneToTextbox() { addNumberToTextbox("1"); }
 function addTwoToTextbox() { addNumberToTextbox("2"); }
@@ -64,3 +69,4 @@ document.getElementById("button_9").addEventListener("click",addNineToTextbox);
 document.getElementById("button_sqrt").addEventListener("click",calc_Sqrt);
 document.getElementById("button_exponential").addEventListener("click",calc_exponential);
 document.getElementById("button_c").addEventListener("click",clean);
+document.getElementById("button_fac").addEventListener("click",calculateCalculator);
