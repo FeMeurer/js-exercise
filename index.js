@@ -22,8 +22,8 @@ document.getElementById("calc").addEventListener("click",calculate);
 
 function addNumberToTextbox(number) {
     var existingValue = document.getElementById("outputBox_rechner").value;
-    exisitingValue = existingValue + number;
-    document.getElementById("outputBox_rechner").value = exisitingValue;
+    existingValue = existingValue + number;
+    document.getElementById("outputBox_rechner").value = existingValue;
 }
 
 function calc_Sqrt() {
